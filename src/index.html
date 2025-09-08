@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>easyocr</title>
+  <script src="js/tesseract.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>✍</text></svg>"></link>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/scrollbar.css">
+</head>
+<body>
+  
+  <select id="lang">
+    <option value="eng" selected>English</option>
+    <option value="por">Portuguese</option>
+    <option value="spa">Spanish</option>
+    <option value="fra">French</option>
+    <option value="deu">German</option>
+    <option value="ita">Italian</option>
+    <option value="jpn">Japanese</option>
+  </select>
+
+  <main>
+    <div id="dropzone">Drop image here or paste with Ctrl+V</div>
+    <input type="file" id="fileInput" accept="image/*" hidden>
+    <div id="previewBox">
+      <img id="preview" alt="">
+    </div>
+    <div id="outputBox">
+      <textarea readonly id="output" placeholder="Extracted text will appear here..."></textarea>
+    </div>
+
+    <script src="js/ocr.js"></script>
+    <script src="js/copy-button.js"></script>
+  </main>
+</body>
+</html>
