@@ -7,6 +7,8 @@ Web-based OCR (Optical Character Recognition) tool using [Tesseract.js](https://
 - Paste image from clipboard (Ctrl+V)
 - Preview uploaded image
 - Copy extracted text to clipboard
+- Upload multiple images to bulk ocr
+
 
 ## Supported Languages
 - English
